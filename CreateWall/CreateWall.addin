@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <!--
+  <AddIn Type="Command">
+    <Text>Command CreateWall</Text>
+    <Description>Some description for CreateWall</Description>
+    <Assembly>CreateWall.dll</Assembly>
+    <FullClassName>CreateWall.Command</FullClassName>
+    <ClientId>e7029f8f-0368-4737-bf8c-50ad256b08fb</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  -->
+  
+  <AddIn Type="Application">
+    <Name>Application CreateWall</Name>
+    <Assembly>CreateWall.dll</Assembly>
+    <FullClassName>CreateWall.App</FullClassName>
+    <ClientId>59f53d6c-7c11-4721-b642-d087060ffb03</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

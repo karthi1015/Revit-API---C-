@@ -7,9 +7,10 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using System.Reflection;
 using System.Windows.Media.Imaging;
+
 #endregion
 
-namespace TabAndButton
+namespace CreateWall
 {
     class App : IExternalApplication
     {
@@ -19,16 +20,18 @@ namespace TabAndButton
 
             RibbonPanel panel = ribbonPanel(a);
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButton button = panel.AddItem(new PushButtonData("Button", "Test Button", thisAssemblyPath, "TabAndButton.Command")) as PushButton; // might need to be TabAndbutton.Command
+            PushButton button = panel.AddItem(new PushButtonData("Button1" /*needs to have separate name than other buttons loaded */,
+                "Test Button", thisAssemblyPath, "CreateWall.Command")) as PushButton; // Needs to be <FileName>.Command. 
 
             button.ToolTip = "this is a simple tooltip";
-            var globePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "LACMA DOORS.PNG"); //need to load png
+            var globePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "LACMA DOORS1.PNG"); 
+            //^ need to load image in <filename>/bin/Debug file
 
             Uri uriImage = new Uri(globePath);
             BitmapImage largeImage = new BitmapImage(uriImage);
             button.LargeImage = largeImage;
 
-            
+
 
 
             a.ApplicationClosing += a_ApplicationClosing;
@@ -50,14 +53,14 @@ namespace TabAndButton
         }
 
 
-        public RibbonPanel ribbonPanel (UIControlledApplication a)
+        public RibbonPanel ribbonPanel(UIControlledApplication a)
         {
             string tab = "My test tab";
             RibbonPanel ribbonPanel = null;
             try
             {
-                
-                //a.CreateRibbonPanel(tab);
+
+               
                 a.CreateRibbonTab(tab);
             }
             catch { }
@@ -68,7 +71,7 @@ namespace TabAndButton
             catch { }
 
             List<RibbonPanel> panels = a.GetRibbonPanels(tab);
-            foreach(RibbonPanel p in panels)
+            foreach (RibbonPanel p in panels)
             {
                 if (p.Name == "test")
                 {
