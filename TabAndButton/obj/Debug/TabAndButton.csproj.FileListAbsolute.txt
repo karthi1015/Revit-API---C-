@@ -1,0 +1,5 @@
+C:\Users\cmaltez\source\repos\TabAndButton\bin\Debug\TabAndButton.dll
+C:\Users\cmaltez\source\repos\TabAndButton\bin\Debug\TabAndButton.pdb
+C:\Users\cmaltez\source\repos\TabAndButton\obj\Debug\TabAndButton.csprojAssemblyReference.cache
+C:\Users\cmaltez\source\repos\TabAndButton\obj\Debug\TabAndButton.dll
+C:\Users\cmaltez\source\repos\TabAndButton\obj\Debug\TabAndButton.pdb

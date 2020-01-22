@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <!--
+  <AddIn Type="Command">
+    <Text>Command TabAndButton</Text>
+    <Description>Some description for TabAndButton</Description>
+    <Assembly>TabAndButton.dll</Assembly>
+    <FullClassName>TabAndButton.Command</FullClassName>
+    <ClientId>da79b663-687e-4571-a58e-d51aecf1a843</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  -->
+  
+  
+  <AddIn Type="Application">
+    <Name>Application TabAndButton</Name>
+    <Assembly>TabAndButton.dll</Assembly>
+    <FullClassName>TabAndButton.App</FullClassName>
+    <ClientId>5bf090d6-254c-49a8-83d3-602f5b8e90f5</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
